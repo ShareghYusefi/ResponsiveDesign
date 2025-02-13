@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+    <style>
+      img {
+        /* maximum width of 80% of parent element width */
+        max-width: 80%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Design</h1>
+    <!-- We can have srcset attribute with multiple images with different resolutions -->
+    <!-- Apple devices have 2x resolution, so we can provide 2x resolution images -->
+    <img
+      src="mountains.jpg"
+      alt="A beautiful mountain landscape"
+      srcset="
+        mountains-400.jpg   400w,
+        mountains-800.jpg   800w,
+        mountains-1200.jpg 1200w
+      "
+    />
+  </body>
+</html>
